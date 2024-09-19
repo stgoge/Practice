@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test_watch": "jest --watch"
+    "test": "tsc && jest",
+    "test_watch": "jest --watch",
+    "start": "tsc && node dist/app.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +16,7 @@
     "@types/eslint__js": "^8.42.3",
     "@types/jest": "^29.5.12",
     "@types/lodash": "^4.17.7",
-    "@types/node": "^22.0.0",
+    "@types/node": "^22.5.5",
     "async": "^3.2.5",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
